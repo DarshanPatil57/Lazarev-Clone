@@ -202,4 +202,201 @@ nav button svg {
     height: 100vh;
     width: 100%;
     background-color: #111;
+    position: relative;
+    padding: 0vw 10vw;
+    padding-bottom: 8vw;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #333;
+    justify-content: space-between;
+}
+
+.page2-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: #333; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 0;
+}
+
+.page2-left p{
+    font-size: 0.9vw;
+
+}
+.page2-left h5{
+    width: 75%;
+    font-weight: 400;
+    font-size: 1vw;
+    
+}
+
+.page2-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: #444; */
+}
+
+.right-elem{
+    position: relative;
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+    border-bottom: 1px solid #333;
+}
+
+.right-elem h2{
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+
+.right-elem img{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    scale: 0;
+}
+
+.page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page3-center {
+    /* background-color: red;   */
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    flex-direction: column;
+}
+
+
+.page3-center .icon {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: 3.3vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.page3-center .icon i {
+    color: #000;
+    font-size: 2.8vw;
+
+}
+
+.page3-center h5 {
+    font-size: 0.8vw;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    padding: 12px 26px 10px 26px;
+    margin-top: 0.5vw;
+    font-weight: 700;
+    opacity: 0;
+    transition: all ease 0.5s;
+    transform: translateY(16%);
+    text-transform: uppercase;
+}
+
+.page3-center:hover h5 {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.page3 video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(0.7) scaleY(0);
+    opacity: 0;
+    border-radius: 30px;
+    z-index: 99999;
+}
+
+.page4{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    padding: 0vw 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page4-left{
+    height: 70%;
+    width: 30%;
+    padding: vw 0;
+    /* background-color: #0BA34E; */
+}    
+
+.page4-left p{
+    font-size: 3vw;
+    color: #000;
+    font-weight: 800;
+    line-height: 3.2vw;
+}
+
+.page4-right{
+    height: 70%;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 50px;
+    flex-direction: column;
+}
+.page4-right-top{
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-around;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.page4-right-bottom{
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-around;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.page4-right-top h4{
+    color: #868484c5;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.page4-right-top p{
+    color: #000;
+    font-size: 1.8vw;
+}
+
+.page4-right-bottom h4{
+    color: #868484c5;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.page4-right-bottom p{
+    color: #000;
+    font-size: 1.8vw;
 }

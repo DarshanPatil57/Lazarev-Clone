@@ -95,6 +95,26 @@ video.addEventListener("click",function(){
 })
  }
 
- // navanimation()
+ page5Animation(){
+    var section = document.querySelectorAll(".section-right")
+    var video = document.querySelector(".section-right video")
+    
+    section.forEach(function(elem){
+        elem.addEventListener("mouseenter",function(){
+            elem.childNodes[3].style.opacity =1
+            elem.childNodes[3].play()
+        })
+        elem.addEventListener("mouseleave",function(){
+            elem.childNodes[3].style.opacity =0
+            elem.childNodes[3].load()
+        })
+    })
+    }
+
+// navanimation()
 //  page2Animation()
 // page3Animation()
+// page5Animation()
+
+
+

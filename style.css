@@ -400,3 +400,71 @@ nav button svg {
     color: #000;
     font-size: 1.8vw;
 }
+
+.page5{
+    min-height: 10vh;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+}
+.section{
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13vh 10vw;
+    padding-bottom: 0;
+}
+.section-left{
+    height: 100%;
+    width: 24%;
+    border-top: 2px solid #000;
+    /* background-color: #0BA34E; */
+}
+
+.section-left h2{
+    padding-top: 2vh;
+    font-size: 2vw;
+    font-weight: 500;
+    color: #000;
+}
+
+.section-left p{
+    color: #000;
+    margin-top: 10vh;
+    font-size: 1vw;
+}
+
+
+.section-right{
+    height: 100%;
+    width: 70%;
+    /* background-color: aqua ; */
+    position: relative;
+}
+
+.section-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-right video{
+    height: 100%;
+    width: 100%;
+    /* background-color: #0BA34E; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity ease .3;
+}
+
+.page6{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #111;
+        
+}

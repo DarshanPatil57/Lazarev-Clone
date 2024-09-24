@@ -95,7 +95,7 @@ video.addEventListener("click",function(){
 })
  }
 
- page5Animation(){
+function page5Animation(){
     var section = document.querySelectorAll(".section-right")
     var video = document.querySelector(".section-right video")
     
@@ -106,15 +106,64 @@ video.addEventListener("click",function(){
         })
         elem.addEventListener("mouseleave",function(){
             elem.childNodes[3].style.opacity =0
-            elem.childNodes[3].load()
+            elem.childNodes[3].load();
         })
     })
     }
 
-// navanimation()
-//  page2Animation()
-// page3Animation()
-// page5Animation()
+navanimation()
+ page2Animation()
+page3Animation()
+page5Animation()
+
+
+gsap.to("#page7-part2  h4",{
+    x:90,
+    duration:1,
+    stagger:{
+        amount:-0.4
+    },
+    scrollTrigger:{
+        trigger:"#page7-part2 h4",
+        scroller:"body",
+        markers:true,
+        start:"top 80%",
+        end:"top -80",
+        scrub:true
+    }
+})
+
+gsap.to("#page7-part3 h4",{
+    x:90,
+    duration:1,
+    stagger:{
+        amount:-0.4
+    },
+    scrollTrigger:{
+        trigger:"#page7-part2 h4",
+        scroller:"body",
+        markers:true,
+        start:"top 80%",
+        end:"top -80",
+        scrub:true
+    }
+})
+
+gsap.to("#page7-part4  h4",{
+    x:90,
+    duration:1,
+    stagger:{
+        amount:-0.4
+    },
+    scrollTrigger:{
+        trigger:"#page7-part2 h4",
+        scroller:"body",
+        markers:true,
+        start:"top 80%",
+        end:"top -80",
+        scrub:true
+    }
+})
 
 
 

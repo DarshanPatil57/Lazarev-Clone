@@ -155,7 +155,7 @@ nav button svg {
 
 #moving-div .move {
     display: inline-block;
-    /* animation-name: move; */
+    animation-name: move;
     animation-duration: 9s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -468,6 +468,7 @@ nav button svg {
     background-color: #111;
     position: relative;
     padding: 5vh 10.5vw;
+    margin-top: 10vw;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -745,28 +746,56 @@ summary::marker{
     margin-right: 1vw;
 }
 
-/* #page7-part1 h4:nth-child(2){
+#page7-part2 h4:nth-child(2){
     transform: translateX(0);
 }
 #page7-part2 h4:nth-child(3){
     transform: translateX(10%);
 }
-#page7-part3 h4:nth-child(4){
+#page7-part2 h4:nth-child(4){
     transform: translateX(20%);
 }
-#page7-part4 h4:nth-child(5){
+#page7-part2 h4:nth-child(5){
     transform: translateX(30%);
 }
-#page7-part5 h4:nth-child(6){
+#page7-part2 h4:nth-child(6){
     transform: translateX(40%);
 }
-#page7-part6 h4:nth-child(7){
+#page7-part2 h4:nth-child(7){
     transform: translateX(50%);
-} */
+}
 
+#page7-part3 h4:nth-child(2){
+    transform: translateX(0%);
+}
+
+#page7-part3 h4:nth-child(3){
+    transform: translateX(20%);
+}
+
+#page7-part4 h4:nth-child(2){
+    transform: translateX(0%);
+}
+
+#page7-part4 h4:nth-child(3){
+    transform: translateX(20%);
+}
+#page7-part4 h4:nth-child(4){
+    transform: translateX(30%);
+}
 
 .page8{
-    height: 100vh;
+    height: 15vh;
     width: 100%;
     background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page8 h1{
+    padding: 5vh 10vh;
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 400;
 }

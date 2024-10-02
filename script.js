@@ -1,3 +1,5 @@
+
+
 function locomotiveAnimation(){
     gsap.registerPlugin(ScrollTrigger);
 
@@ -69,43 +71,66 @@ function loadingAnimation(){
 function navanimation() {
   var nav = document.querySelector("nav");
 
-  nav.addEventListener("mouseenter", function () {
-    let tl = gsap.timeline();
+  function handleNavAnimation() {
+      nav.addEventListener("mouseenter", function () {
+          let tl = gsap.timeline();
+          tl.to("#nav-bottom", {
+              height: "21vh",
+              duration: 0.2,
+          });
+          tl.to(".nav-part2 h5", {
+              display: "block",
+              duration: 0.1,
+          });
+          tl.to(".nav-part2 h5 span", {
+              y: 0,
+              stagger: {
+                  amount: 0.5,
+              },
+          });
+      });
 
-    tl.to("#nav-bottom", {
-      height: "21vh",
-      duration: 0.2,
-    });
-    tl.to(".nav-part2 h5", {
-      display: "block",
-      duration: 0.1,
-    });
-    tl.to(".nav-part2 h5 span", {
-      y: 0,
-      // duration:0.3,
-      stagger: {
-        amount: 0.5,
-      },
-    });
+      nav.addEventListener("mouseleave", function () {
+          let tl = gsap.timeline();
+          tl.to(".nav-part2 h5 span", {
+              y: 25,
+              stagger: {
+                  amount: 0.2,
+              },
+          });
+          tl.to(".nav-part2 h5", {
+              display: "none",
+              duration: 0.1,
+          });
+          tl.to("#nav-bottom", {
+              height: 0,
+              duration: 0.2,
+          });
+      });
+  }
+
+
+  if (window.innerWidth > 768) {
+      handleNavAnimation(); 
+  }
+
+  window.addEventListener("resize", function () {
+      if (window.innerWidth > 768) {
+          handleNavAnimation();
+      } else {
+          nav.removeEventListener("mouseenter", handleNavAnimation);
+          nav.removeEventListener("mouseleave", handleNavAnimation);
+      }
   });
-  nav.addEventListener("mouseleave", function () {
-    let tl = gsap.timeline();
-    tl.to(".nav-part2 h5 span", {
-      y: 25,
-      stagger: {
-        amount: 0.2,
-      },
-    });
-    tl.to(".nav-part2 h5", {
-      display: "none",
-      duration: 0.1,
-    });
-    tl.to("#nav-bottom", {
-      height: 0,
-      duration: 0.2,
-    });
+
+
+  document.getElementById("menu-icon").addEventListener("click", function() {
+      var navLinks = document.querySelector(".nav-part2");
+      navLinks.classList.toggle("nav-open"); 
   });
 }
+
+
 
 function page2Animation() {
   var rightelem = document.querySelectorAll(".right-elem");

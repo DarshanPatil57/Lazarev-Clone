@@ -86,6 +86,10 @@ nav button svg {
     border-bottom: 1px solid #fff;
 }
 
+.menu-icon{
+    display: none;
+}
+
 #page1 {
     height: 100vh;
     width: 100%;
@@ -820,11 +824,11 @@ Extra large	    l	                ≥1200px */
     }
 
     nav h1 {
-        font-size: 3vw; /* Adjust the logo size */
+        font-size: 4vw; 
     }
 
     .nav-part2 {
-        display: none; /* Initially hide the navigation links */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -846,17 +850,17 @@ Extra large	    l	                ≥1200px */
 
     .menu-icon {
         display: block; 
-        font-size: 5vw;
+        font-size: 5.5vw;
         cursor: pointer;
     }
 
     nav button {
-        font-size: 2vw;
-        padding: 10px 15px;
+        font-size: 3vw;
+        padding: 8px 13px;
     }
 
     nav button svg {
-        height: 3vw;
+        height: 2.5vw;
         margin-left: 1vw;
     }
 
@@ -867,26 +871,26 @@ Extra large	    l	                ≥1200px */
     
 
     #page1 h1 {
-        font-size: 10vw;
-        line-height: 10vw;
+        font-size: 11vw;
+        line-height: 14vw;
     }
     
     #page1 h1 svg {
-        height: 8vw;
-        width: 8vw;
+        height: 9vw;
+        width: 9vw;
     }
 
     #page1 p {
-        font-size: 2vw;
+        font-size: 2.9vw;
     }
     
     #page1-something h4 {
-        font-size: 2vw;
+        font-size: 2.5vw;
         margin-top: 1.5vw;
     }
     
     #moving-div .move img {
-        height: 2.5vw;
+        height: 3.5vw;
     
     }
     
@@ -899,35 +903,36 @@ Extra large	    l	                ≥1200px */
 
     .page2-left {
         width: 100%;
-        padding: 10vw 0;
+        padding: 14vw 0;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        flex-direction: row;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8vw;
     }
 
     .page2-left p {
-        font-size: 3vw;
+        font-size: 4.5vw;
         width: 100%;
     }
 
     .page2-left h5 {
-        font-size: 2vw;
+        font-size: 4vw;
         width: 100%;
     }
 
     .page2-right {
         width: 100%;
-        padding-bottom: 5vw;
-    }
-
-    .right-elem {
-        padding-top: 5vw;
         padding-bottom: 8vw;
     }
 
+    .right-elem {
+        padding-top: 18vw;
+        padding-bottom: 9vw;
+    }
+
     .right-elem h2 {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .right-elem img {
@@ -937,11 +942,11 @@ Extra large	    l	                ≥1200px */
 
 
     .page3 {
-        height: 80vh;
+        height: 60vh;
     }
     
     .page3-center h5 {
-        font-size: 1.9vw;
+        font-size: 3vw;
     }
     
 
@@ -959,7 +964,7 @@ Extra large	    l	                ≥1200px */
     }
 
     .page4-left p {
-        font-size: 5vw;
+        font-size: 6vw;
         line-height: 5.5vw;
     }
 
@@ -973,15 +978,15 @@ Extra large	    l	                ≥1200px */
     }
 
     .page4-right-top h4, .page4-right-bottom h4 {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 
     .page4-right-top p, .page4-right-bottom p {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .page5{
-        min-height: 10vh;
+        min-height: 100vh;
         width: 100%;
         position: relative;
         background-color: #fff;
@@ -992,28 +997,28 @@ Extra large	    l	                ≥1200px */
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        padding: 13vh 6vw; 
+        padding: 13vh 4vw; 
         padding-bottom: 0;
     }
     .section-left{
         height: 100%;
         width: 100%;
         border-top: 2px solid #000;
-        /* background-color: #0BA34E; */
+        /* background-color: #0BA34E;   */
     }
     
     .section-left h2{
         padding-top: 3vh;
-        font-size: 4vw;
+        font-size: 7vw;
         font-weight: 500;
         color: #000;
     }
     
     .section-left p{
         color: #000;
-        margin-top: 10vh;
-        font-size: 2vw;
-        margin-bottom: 5vh;
+        margin-top: 6vh;
+        font-size: 4vw;
+        margin-bottom: 8vh;
     }
     
     
@@ -1050,11 +1055,13 @@ Extra large	    l	                ≥1200px */
     }
     
     .page6 button{
-        padding: 1.5vw 2.9vw;
-        font-size: 2.5vw;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        width: 100%;
+        padding: 1.5vw 3vw;
+        font-size: 4vw;
+        margin-bottom: 4vw;
+        /* top: 50%;
+        left: 50%; */
+        /* transform: translate(-50%,-50%); */
         /* display: none; */
     }
     
@@ -1063,7 +1070,7 @@ Extra large	    l	                ≥1200px */
     }
     
     .page6-right>p{
-        font-size: 2.2vw;
+        font-size: 3.5vw;
     }
     
     
@@ -1073,7 +1080,7 @@ Extra large	    l	                ≥1200px */
     }
     
     .page6-content h1{
-        font-size: 6vw;
+        font-size: 8vw;
     }
     
     .page6-content .tags{
@@ -1085,16 +1092,16 @@ Extra large	    l	                ≥1200px */
     }
     
     .page6-content .tags h4{
-        font-size: 2vw;
+        font-size: 1.8vw;
 
     }
     
     .page6-elem p{
-        font-size: 1.9vw;    
+        font-size: 2.2vw;    
     }
     
     .page6-elem h3{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     
     .page6-elem i{
@@ -1104,12 +1111,13 @@ Extra large	    l	                ≥1200px */
 .page7{
     width: 100%;
     background-color: #fff;
-    padding: 5vh 3vw;
+    padding: 6vh 2vw;
 }
 
 .page7 h1{
-    font-size: 8vw;
-    line-height: 7vw;
+    text-transform: uppercase;
+    font-size: 12vw;
+    line-height: 11vw;
 }   
 
 .page7-content{
@@ -1124,7 +1132,7 @@ Extra large	    l	                ≥1200px */
 }
 
 .page7-content .page7-right p{
-    font-size: 2.5vw;
+    font-size: 5vw;
     color: #000;
     margin-bottom: 8vh;
     width: 100%;
@@ -1132,8 +1140,8 @@ Extra large	    l	                ≥1200px */
 
 .blue-btn{
     background-color: #4f5bff;
-    width: 44vw;
-    height: 7vw;
+    width: 55vw;
+    height: 10vw;
     border-radius: 100px;
     align-self: center;
     margin-bottom: 4vh;
@@ -1145,11 +1153,11 @@ Extra large	    l	                ≥1200px */
     position: absolute;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
 }
 
 .blue-btn i{
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 100;
     margin-left: 0.5vw;
 }
@@ -1172,12 +1180,12 @@ Extra large	    l	                ≥1200px */
 }
 
 .bottom7 h5 {
-    font-size: 3vw; 
+    font-size: 5vw; 
     margin-bottom: 2vh;
 }
 
 .bottom7 h4 {
-    font-size: 2.5vw; 
+    font-size: 3.5vw; 
     padding: 10px 20px;
 }
 
@@ -1192,7 +1200,7 @@ Extra large	    l	                ≥1200px */
 #page7-part2 h4,
 #page7-part3 h4,
 #page7-part4 h4 {
-        transform: translateX(0) !important; /* Remove any translateX */
+        transform: translateX(0) !important; 
     }
 
 .page8 {
@@ -1203,7 +1211,7 @@ Extra large	    l	                ≥1200px */
 }
 
 .page8 h1 {
-    font-size: 2.5vw;
+    font-size: 3vw;
     text-align: center;
     padding: 2vh 0;
 }
@@ -1220,11 +1228,11 @@ Extra large	    l	                ≥1200px */
     }
 
     nav h1 {
-        font-size: 3vw; /* Adjust the logo size */
+        font-size: 2.5vw;
     }
 
     .nav-part2 {
-        display: none; /* Initially hide the navigation links */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -1236,9 +1244,16 @@ Extra large	    l	                ≥1200px */
     }
 
     .nav-elem h4 {
-        font-size: 2.5vw;
+        font-size: 2vw;
         padding: 1vh 5vw;
     }
+
+    .nav-part2 h5 span {
+        font-size: 2vw;
+        font-weight: 400;
+        transform: translateY(25px);
+        display: inline-block;
+    }   
 
     .nav-elem h5 {
         display: none;
@@ -1246,17 +1261,17 @@ Extra large	    l	                ≥1200px */
 
     .menu-icon {
         display: block; 
-        font-size: 5vw;
+        font-size: 4vw;
         cursor: pointer;
     }
 
     nav button {
-        font-size: 2vw;
+        font-size: 1.5vw;
         padding: 10px 15px;
     }
 
     nav button svg {
-        height: 3vw;
+        height: 2vw;
         margin-left: 1vw;
     }
 
@@ -1592,7 +1607,7 @@ Extra large	    l	                ≥1200px */
 #page7-part2 h4,
 #page7-part3 h4,
 #page7-part4 h4 {
-        transform: translateX(0) !important; /* Remove any translateX */
+        transform: translateX(0) !important; 
     }
 
 .page8 {

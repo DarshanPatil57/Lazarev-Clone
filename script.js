@@ -114,14 +114,14 @@ function navanimation() {
       handleNavAnimation(); 
   }
 
-  window.addEventListener("resize", function () {
-      if (window.innerWidth > 768) {
-          handleNavAnimation();
-      } else {
-          nav.removeEventListener("mouseenter", handleNavAnimation);
-          nav.removeEventListener("mouseleave", handleNavAnimation);
-      }
-  });
+  // window.addEventListener("resize", function () {
+  //     if (window.innerWidth > 768) {
+  //         handleNavAnimation();
+  //     } else {
+  //         nav.removeEventListener("mouseenter", handleNavAnimation);
+  //         nav.removeEventListener("mouseleave", handleNavAnimation);
+  //     }
+  // });
 
 
   document.getElementById("menu-icon").addEventListener("click", function() {

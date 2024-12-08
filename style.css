@@ -839,14 +839,24 @@ Extra large	    l	                ≥1200px */
         gap: 0vw;
     }
 
+    .nav-elem{
+        gap: 0;
+    }
+
     .nav-elem h4 {
         font-size: 2.5vw;
         padding: 1vh 5vw;
     }
 
     .nav-elem h5 {
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+    }
+    .nav-elem h5 span {
         display: none;
     }
+    
 
     .menu-icon {
         display: block; 
@@ -1245,20 +1255,18 @@ Extra large	    l	                ≥1200px */
 
     .nav-elem h4 {
         font-size: 2vw;
-        padding: 1vh 5vw;
+        padding:  5vw;
     }
-
-    .nav-part2 h5 span {
-        font-size: 2vw;
-        font-weight: 400;
-        transform: translateY(25px);
-        display: inline-block;
-    }   
 
     .nav-elem h5 {
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+    }
+    .nav-elem h5 span {
         display: none;
     }
-
+    
     .menu-icon {
         display: block; 
         font-size: 4vw;
@@ -1465,6 +1473,7 @@ Extra large	    l	                ≥1200px */
     }
     
     .page6 button{
+        position: relative;
         padding: 1.5vw 2.9vw;
         font-size: 2.5vw;
         top: 50%;
